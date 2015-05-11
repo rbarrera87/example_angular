@@ -1,6 +1,7 @@
-  <div ng-repeat="user in users | orderBy: 'name' ">
-    <p>{{user.name}}</p>
-    <p>{{user.last_name}}</p>
-    <p>{{user.dob}}</p>
-    <a ng-href="#/users/{{user.id}}">Go to this user</a>
-  </div>
+<div ng-repeat="user in users | orderBy: 'name' ">
+  <p>{{user.name}}</p>
+  <p>{{user.last_name}}</p>
+  <p>{{user.dob}}</p>
+  <a ng-href="#/users/{{user.id}}">Go to this user</a>
+</div>
+<a href="#/users/new">Create new user</a>

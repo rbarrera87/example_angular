@@ -8,6 +8,10 @@ angular.module('app')
         templateUrl: 'templates/users/index.html',
         controller: 'UserController'
       })
+      .when('/users/new', {
+        templateUrl: 'templates/users/new.html',
+        controller: 'UserNewController'
+      })
       .when('/users/:id', {
         templateUrl: 'templates/users/show.html',
         controller: 'UserShowController'
